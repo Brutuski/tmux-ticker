@@ -106,7 +106,7 @@ set -g status-left "......#[fg=#21252D,bg=#5AD1AA] #{ticker_nasdaq} ~ #{ticker_n
 
 #### Changelog
 ``` vim
-v1.0.0
+v1.0.1
 ```
 Changes can be tracked in the [CHANGELOG](https://github.com/Brutuski/tmux-ticker/blob/main/CHANGELOG.md)
 

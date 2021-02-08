@@ -3,7 +3,7 @@
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source "$CURRENT_DIR/scripts/helpers.sh"
 
-pia_commands=(
+ticker_commands=(
   "#($CURRENT_DIR/scripts/dji.sh)"
   "#($CURRENT_DIR/scripts/dji_change.sh)"
   "#($CURRENT_DIR/scripts/nasdaq.sh)"
@@ -16,7 +16,7 @@ pia_commands=(
   "#($CURRENT_DIR/scripts/stock_change.sh)"
 )
 
-pia_interpolation=(
+ticker_interpolation=(
 	"\#{ticker_dji}"
 	"\#{ticker_dji_change}"
 	"\#{ticker_nasdaq}"
@@ -38,8 +38,8 @@ set_tmux_options() {
 do_interpolation() {
 	local interpolated="$1"
 
-	for ((i=0; i<${#pia_commands[@]}; i++)); do
-		interpolated=${interpolated/${pia_interpolation[$i]}/${pia_commands[$i]}}
+	for ((i=0; i<${#ticker_commands[@]}; i++)); do
+		interpolated=${interpolated/${ticker_interpolation[$i]}/${ticker_commands[$i]}}
 	done
 
 	echo "$interpolated"

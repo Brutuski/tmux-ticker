@@ -7,12 +7,17 @@
 
 ### Index
 * [v1.0.0](#v1.0.0)
+* [v1.0.1](#v1.0.1)
 * [Versioning System](#versioning-system)
 * [License](#license)
 
 #### v1.0.0
 _08/02/2021_
 - Initial Release 
+
+#### v1.0.1
+_08/02/2021_
+- Corrected function names in main script
 
 #### Versioning System
 Tmux- uses [Semantic versioning 2.0.0](https://semver.org)

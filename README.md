@@ -5,6 +5,10 @@
         <img alt="License" src="https://img.shields.io/badge/LICENSE-MIT-1D918B.svg">
 </p>
 
+<p align="center">
+    <a href="https://www.buymeacoffee.com/asirohi"><img alt="Status" src="https://raw.githubusercontent.com/Brutuski/tmux-crypto/8a44fec52097cede774504f5bdaca5386abac3cc/assets/bmc.svg" width="150" height="23"> 
+</p>
+
 ### Index
 * [Getting Started](#getting-started)
 * [Screenshots & Demo](#screenshots)

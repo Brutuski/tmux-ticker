@@ -45,6 +45,8 @@ Supported Indexes:
 
 - Any stock ticker can also be added.
     * #{ticker_stock}
+- Any cryptocurrency ticker can also be added.
+    * #{ticker_crypto}
 
 #### Screenshots
 <p align="center"><img src="https://raw.githubusercontent.com/Brutuski/tmux-ticker/main/assets/ticker1.png"><p>

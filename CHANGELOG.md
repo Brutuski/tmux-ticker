@@ -8,6 +8,7 @@
 ### Index
 * [v1.0.0](#v1.0.0)
 * [v1.0.1](#v1.0.1)
+* [v1.1.1](#v1.1.1)
 * [Versioning System](#versioning-system)
 * [License](#license)
 
@@ -18,6 +19,10 @@ _08/02/2021_
 #### v1.0.1
 _08/02/2021_
 - Corrected function names in main script
+
+#### v1.1.1
+_19/02/2021_
+- Tickers for crypto added as of [this commit](https://github.com/Brutuski/tmux-ticker/commit/a571e0535e2662c6b6c902340f2f5434da4a26d8).
 
 #### Versioning System
 Tmux- uses [Semantic versioning 2.0.0](https://semver.org)

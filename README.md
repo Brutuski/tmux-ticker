@@ -89,6 +89,12 @@ _Tmux Lighthaus theme coming soon_
         set -g @ticker_stock "AAPL"
         #{ticker_stock}
       ```
+- Change the following format string with the crypto ticker
+    * ``` vim
+        set -g @ticker_crypto "BTCUSD"
+        #{ticker_crypto}
+      ```
+_For a list of all available crypto tickers, see the list provided [here](https://www.marketwatch.com/investing/cryptocurrency)_
 - Reload the tmux config and the changes should take effect.
 
 #### Options
@@ -110,7 +116,7 @@ set -g status-left "......#[fg=#21252D,bg=#5AD1AA] #{ticker_nasdaq} ~ #{ticker_n
 
 #### Changelog
 ``` vim
-v1.0.1
+v1.1.1
 ```
 Changes can be tracked in the [CHANGELOG](https://github.com/Brutuski/tmux-ticker/blob/main/CHANGELOG.md)
 

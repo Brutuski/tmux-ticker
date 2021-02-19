@@ -14,6 +14,8 @@ ticker_commands=(
   "#($CURRENT_DIR/scripts/sp500_change.sh)"
   "#($CURRENT_DIR/scripts/stock.sh)"
   "#($CURRENT_DIR/scripts/stock_change.sh)"
+  "#($CURRENT_DIR/scripts/crypto.sh)"
+  "#($CURRENT_DIR/scripts/crypto_change.sh)"
 )
 
 ticker_interpolation=(
@@ -27,6 +29,8 @@ ticker_interpolation=(
 	"\#{ticker_sp500_change}"
 	"\#{ticker_stock}"
 	"\#{ticker_stock_change}"
+	"\#{ticker_crypto}"
+	"\#{ticker_crypto_change}"
 )
 
 set_tmux_options() {

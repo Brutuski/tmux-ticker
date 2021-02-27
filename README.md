@@ -23,9 +23,12 @@
 * [Logo Credit](#logo-credit)
 
 #### Getting Started
-Ticker helps you keep track of various market indexes or a stock you wanna keep an eye out on.
+Ticker helps you keep track of various _market indexes_ or a _stock_ you would like to keep an eye out on.
+Their percentage changes can be tracked as well.
+This plugin also supports some of the _top crypto currencies_ as well.
 
-Percentage change of the indexes can also be displayed.<br>
+If you would like to track more cyrpto currencies with various different fiat currency support, use [tux-crypto](https://github.com/Brutuski/tmux-crypto) instead.
+
 The data is fetched from [Marketwatch](https://www.marketwatch.com/).
 _Currently only US Markets are supported._
 

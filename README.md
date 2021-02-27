@@ -24,7 +24,9 @@
 
 #### Getting Started
 Ticker helps you keep track of various _market indexes_ or a _stock_ you would like to keep an eye out on.
+
 Their percentage changes can be tracked as well.
+
 This plugin also supports some of the _top crypto currencies_ as well.
 
 If you would like to track more cyrpto currencies with various different fiat currency support, use [tux-crypto](https://github.com/Brutuski/tmux-crypto) instead.

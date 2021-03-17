@@ -16,7 +16,7 @@ main() {
 
 get_crypto()
 {
-    value=$(curl -s https://www.marketwatch.com/investing/cryptocurrency/${crypto_ticker_name} | grep '<meta name="price" content="' | cut -d'"' -f4)
+    value=$(curl -s "https://api.cryptonator.com/api/ticker/$crypto_ticker_name" | sed -E 's/.*"price":"?([^,"]*)"?.*/\1/')
 
     if [[ ! -z "$value" ]]; then
         printf "$crypto_ticker_name: $value"

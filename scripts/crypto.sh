@@ -16,7 +16,7 @@ main() {
 
 get_crypto()
 {
-    value=$(curl -s "https://api.cryptonator.com/api/ticker/$crypto_ticker_name" | sed -E 's/.*"price":"?([^,"]*)"?.*/\1/')
+    value=$(curl -s "https://api.cryptonator.com/api/ticker/$crypto_ticker_name" | sed -E 's/.*"price":"?([^,"]*)"?.*/\1/' | xargs printf "%'.3f")
 
     if [[ ! -z "$value" ]]; then
         printf "$crypto_ticker_name: $value"

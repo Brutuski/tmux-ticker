@@ -34,6 +34,8 @@ If you would like to track more cyrpto currencies with various different fiat cu
 The data is fetched from [Marketwatch](https://www.marketwatch.com/).
 _Currently only US Markets are supported._
 
+Crypto Data is fetched from [Cryptonator](https://www.cryptonator.com/).
+
 Supported Indexes:
 - Dow Jones Industrial Average -> DJI
     * #{ticker_dji}
@@ -50,7 +52,7 @@ Supported Indexes:
 
 - Any stock ticker can also be added.
     * #{ticker_stock}
-- Any cryptocurrency ticker can also be added.
+- Cryptocurrency ticker can also be added.
     * #{ticker_crypto}
 
 #### Screenshots
@@ -81,7 +83,7 @@ _Tmux Lighthaus theme coming soon_
 
 **Manual Installation:**
 - Clone this repo
-    * ``` vim
+    * ``` sh
         git clone https://github.com/Brutuski/tmux-ticker.git  ~/.tmux/tmux-ticker
       ```
 - Add the following line to the bottom of your tmux config
@@ -98,10 +100,9 @@ _Tmux Lighthaus theme coming soon_
       ```
 - Change the following format string with the crypto ticker
     * ``` vim
-        set -g @ticker_crypto "BTCUSD"
+        set -g @ticker_crypto "BTC-USD"
         #{ticker_crypto}
       ```
-_For a list of all available crypto tickers, see the list provided [here](https://www.marketwatch.com/investing/cryptocurrency)_
 - Reload the tmux config and the changes should take effect.
 
 #### Options
@@ -123,7 +124,7 @@ set -g status-left "......#[fg=#21252D,bg=#5AD1AA] #{ticker_nasdaq} ~ #{ticker_n
 
 #### Changelog
 ``` vim
-v1.1.1
+v 1.1.2
 ```
 Changes can be tracked in the [CHANGELOG](https://github.com/Brutuski/tmux-ticker/blob/main/CHANGELOG.md)
 

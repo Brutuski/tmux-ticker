@@ -16,10 +16,11 @@ main() {
 
 get_crypto_change()
 {
-    value=$(curl -s https://www.marketwatch.com/investing/cryptocurrency/${crypto_ticker_name} | grep '<meta name="priceChangePercent" content="' | cut -d'"' -f4)
+    resp=$(curl -s "https://api.cryptonator.com/api/ticker/${crypto_ticker_name}")
+    value=$((100/$(echo $resp | sed -E 's/.*"price":"?([^,"]*)"?.*/\1/')*$(echo $resp | sed -E 's/.*"change":"?([^,"]*)"?.*/\1/')))
 
     if [[ ! -z "$value" ]]; then
-        printf "$value%"
+        printf "%'.2f%%" $value
     fi
 }
 

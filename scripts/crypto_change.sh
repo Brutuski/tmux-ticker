@@ -16,7 +16,7 @@ main() {
 
 get_crypto_change()
 {
-    resp=$(curl -s "https://api.cryptonator.com/api/ticker/${crypto_ticker_name}")
+    resp=$(curl -s "https://rate.sx/1${crypto_ticker_name}")
     value=$((100/$(echo $resp | sed -E 's/.*"price":"?([^,"]*)"?.*/\1/')*$(echo $resp | sed -E 's/.*"change":"?([^,"]*)"?.*/\1/')))
 
     if [[ ! -z "$value" ]]; then
